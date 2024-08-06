@@ -1,0 +1,122 @@
+
+.nav-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    /* position: relative; */
+    overflow-x: hidden;
+    
+}
+
+.nav-left img{
+    width: 120px;
+    height: 70px;
+    mix-blend-mode: multiply;
+}
+
+.link-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: rgb(80, 79, 79);
+    transition: .5s;
+}
+.link-box li{
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.link-box li:hover{
+    color: #fd5961;
+    transform: scale(1.09);
+    transition: .5s;
+}
+.s-nav-right button{
+    background-color: #fd2631;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+.s-nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 67px;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 20px;
+}
+.s-nav-right button{
+    margin: 0px 10px;
+}
+.s-nav-right button p{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s-nav-right button:hover{
+    background-color: white;
+    color: #fd2631;
+    /* border:2px solid #fd2631; */
+    transition: .5s;
+    transform: scale(1.06);
+}
+.menu-icon{
+    font-size: 24px;
+    font-weight: 600;
+    display: none;
+}
+
+@media (max-width:920px) {
+    .menu-icon{
+        display: block;
+    }
+    .s-nav-right{
+        flex-direction: column;
+        background-color: #fd2631;
+        padding: 20px 40px;
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        display: none;
+        border-radius: 15px;
+        transition: .75s;
+        gap: 30px;
+    }
+    .link-box{
+        flex-direction: column;
+        color: white;
+        gap: 30px;
+    }
+    .link-box li:hover{
+        color: white;
+    }
+    .nav-right button{
+        background-color: white;
+        color: #fd2631;
+        margin-top: 30px;
+    }
+    
+}
+
+.visi{
+display: block;  
+transition: .5s;  
+}
+
+

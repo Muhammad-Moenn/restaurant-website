@@ -1,0 +1,109 @@
+
+.footer-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.footer{
+    /* display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 120px;
+    padding: 20px 50px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.grid-item{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+    flex-direction: column;
+    height: 240px;
+
+}
+.grid-item h2{
+    font-size: 24px;
+    color: rgb(46, 45, 45);
+}
+.grid-item p{
+  font-size: 17px;
+  color: rgb(77, 76, 76);
+  cursor: pointer;
+}
+.grid-item p:hover{
+    transform: scale(1.06);
+    transition: .5s;
+    color: rgb(172, 6, 6);
+}
+.g1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.g1 img{
+    width: 100px;
+    height: 80px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.g1 p{
+    font-size: 18px;
+    max-width:  400px;
+    color: gray;
+    padding: 10px;
+}
+.f-icon-box{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    font-size: 23px;
+}
+.Instagram{
+    color: rgb(177, 19, 19);
+    cursor: pointer;
+}
+.Facebook{
+    color: rgb(53, 131, 247)
+    ;
+    cursor: pointer;
+}
+.Youtube{
+    color: red;
+    cursor: pointer;
+}
+.Whatsapp{
+    color: rgb(32, 148, 32);
+    cursor: pointer;
+}
+.f-icon:hover{
+    transform: scale(1.5);
+    transition: .5s;
+}
+.copyright{
+    padding:20px ;
+    color: rgb(80, 79, 79);
+    text-align: center;
+}
+
+@media (max-width:740px) {
+    .g1{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .footer{
+        gap: 50px;
+        margin-top: 70px;
+    }
+}
