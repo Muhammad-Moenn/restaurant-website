@@ -30,10 +30,10 @@ function Navbar() {
         >
         <div className={`s-nav-right ${menuicon?"visi" :" "}`}>
             <ul className='link-box'>
-                <li><Link to='' smooth={true} offset={200} duration={500}>Why Us</Link></li>
-                <li><Link to='' smooth={true} offset={200} duration={500}>Services</Link></li>
-                <li><Link to='' smooth={true} offset={200} duration={500}>Menu</Link></li>
-                <li><Link to='' smooth={true} offset={200} duration={500}>Contact Us</Link></li>
+                <li><Link to='hero' smooth={true} offset={0} duration={500}>Why Us</Link></li>
+                <li><Link to='service-box' smooth={true} offset={-100} duration={500}>Services</Link></li>
+                <li><Link to='menu-box' smooth={true} offset={-100} duration={500}>Menu</Link></li>
+                <li><Link to='start-box' smooth={true} offset={-200} duration={500}>Contact Us</Link></li>
             </ul>
             <button> <IoIosLogIn />  <p> Login</p></button>
         </div>
